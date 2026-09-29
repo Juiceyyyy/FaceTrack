@@ -7,3 +7,8 @@ __pycache__
 /backend/utils/__pycache__
 backend/models
 backend/debug_images
+
+# Local environment configuration
+.env
+.env.*
+!.env.example

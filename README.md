@@ -65,7 +65,7 @@ A real-time face recognition system with registration, detection, and analytics 
 
 ## Configuration ⚙️
 ### Setting up the `.env` file
-Create a `.env` file in the `root` directory with the following variables:
+Copy `.env.example` to `.env` in the repository root, then replace the placeholder values:
 ```env
 VITE_BACKEND_URL=http://127.0.0.1:8000
 
@@ -80,7 +80,7 @@ PORT=5432
 DBNAME=postgres
 ```
 
-Replace `your_database_url`, `your_supabase_url`, `your_supabase_key`, `your_secret_key`, `your_password`  and `your_host` with your actual credentials.
+Replace the placeholder URLs, key, password, and host with your own configuration. Keep the populated `.env` out of Git.
 
 ---
 
@@ -105,7 +105,7 @@ uvicorn app.main:app --reload
 
 ### 4. Start the frontend app
 ```bash
-cd frontend
+cd ..
 npm install
 npm run dev
 ```
